@@ -11,7 +11,7 @@ List* list_create(){
     return l;
 }
 
-void list_destroy(List* l){
+List* list_destroy(List* l){
     Node* curr = l->head;
     while(curr){
         Node* temp = curr;
@@ -19,6 +19,7 @@ void list_destroy(List* l){
         node_destroy(temp);
     }
     free(l);
+    return NULL;
 }
 
 void list_append(List* l, int n){

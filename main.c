@@ -17,9 +17,10 @@ int main(void) {
     list_append(l, 0);
 
     list_display(l);
-
     list_sort(l);
     list_display(l);
 
+    l = list_destroy(l);
     return 0;
 }
+

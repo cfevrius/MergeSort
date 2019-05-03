@@ -11,7 +11,7 @@ struct List{
 };
 
 List* list_create();
-void list_destroy(List* l);
+List* list_destroy(List* l);
 
 void list_append(List* l, int n);
 void list_display(List* l);
