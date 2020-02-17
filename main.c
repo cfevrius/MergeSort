@@ -6,15 +6,13 @@
 
 int main(void) {
 
-    List* l = list_create();
+    int data_to_sort[] = { 2, 5, 3, 4, 1, 6, 0 };
+    int node_elements = 7;
 
-    list_append(l, 2);
-    list_append(l, 5);
-    list_append(l, 3); 
-    list_append(l, 4);
-    list_append(l, 1);
-    list_append(l, 6);     
-    list_append(l, 0);
+    List* l = list_create();
+    for(int i = 0; i < node_elements; i++){
+        list_append(l, data_to_sort[i]);
+    }
 
     list_display(l);
     list_sort(l);
